@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+body{background:#020617;color:white;text-align:center}
+.box{background:#0f172a;padding:20px;margin:20px;border-radius:15px}
+button{padding:10px;background:#3b82f6;color:white;border-radius:10px}
+</style>
+</head>
+
+<body>
+
+<h2>Dashboard</h2>
+
+<div class="box">
+💰 Balance: {{balance}}
+</div>
+
+<div class="box">
+🔗 Referral Link:
+<br>
+{{ref_link}}
+</div>
+
+<div class="box">
+<a href="/daily"><button>🎁 Daily Bonus</button></a>
+</div>
+
+<div class="box">
+<form action="/order" method="POST">
+<input name="link" placeholder="Telegram Link"><br>
+<select name="type">
+<option value="join">Members</option>
+<option value="view">Views</option>
+<option value="react">Reactions</option>
+</select><br>
+<button>Order</button>
+</form>
+</div>
+
+</body>
+</html> 
